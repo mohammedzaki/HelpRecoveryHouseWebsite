@@ -135,7 +135,7 @@ footer {
 
             footer .footermenu li a {
                 color: #FFFFFF;
-                font-size: 9pt;
+                font-size: 11pt;
                 font-family: Arial, Helvetica, sans-serif;
                 text-decoration: none;
                 font-weight: bold;
@@ -143,7 +143,7 @@ footer {
 
         footer .footermenu ul li a {
             color: #FFFFFF;
-            font-size: 9pt;
+            font-size: 10pt;
             font-family: Arial, Helvetica, sans-serif;
             text-decoration: none;
             font-weight: 100;
@@ -265,7 +265,7 @@ footer {
 
 .btn_style {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 9pt;
+    font-size: 12pt;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -335,6 +335,7 @@ footer {
 }
 
 .pageContent .subPageContent {
+    font-size: 18px;
 
 }
 
@@ -616,7 +617,7 @@ footer {
                     display: block;
                     text-align: right;
                     font-family: Arial, Helvetica, sans-serif;
-                    font-size: 14px;
+                    /* font-size: 14px; */
                     color: #58595b;
                     margin-bottom: 5px;
                 }
@@ -636,7 +637,7 @@ footer {
                 height: 28px;
                 left: 27px;
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 14px;
+                font-size: 16px;
                 padding-right: 7px;
                 color: #58595B;
             }
@@ -662,6 +663,7 @@ footer {
 .address {
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
     font-size: 18px;
     color: #58595b;
     margin-top: 10px;
@@ -824,7 +826,7 @@ footer {
             /* padding-right: 19.7%; */
             font-family: Arial, Helvetica, sans-serif;
             color: #006CB6;
-            font-size: 14px;
+            /* font-size: 14px; */
         }
 
             .vision_missionPage .vision_missionUl li:last-child {
@@ -947,7 +949,7 @@ footer {
     font-size: 14px;
 }
 .why_us_Page > div{
-    height: 310px;
+    height: 396px;
 }
     .why_us_Page .rightCol {
         display: inline-block;
@@ -993,7 +995,7 @@ footer {
 .out_team_Page {
     font-family: Arial, Helvetica, sans-serif;
     color: #006CB6;
-    font-size: 14px;
+    font-size: 12px;
 }
 
     .out_team_Page .contentdiv {
@@ -1104,7 +1106,7 @@ footer {
 .question {
     font-family: Arial, Helvetica, sans-serif;
     color: #006CB6;
-    font-size: 14px;
+    /* font-size: 14px; */
     margin: auto;
     position: relative;
     width: 536px;
@@ -1131,9 +1133,9 @@ footer {
 
 .questionsNums {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    /* font-size: 14px; */
     color: #575958;
-    width: 242px;
+    width: 290px;
     margin: 5px auto 5px auto;
     height: 30px;
 }
