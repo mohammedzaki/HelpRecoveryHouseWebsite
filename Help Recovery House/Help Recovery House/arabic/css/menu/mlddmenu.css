@@ -1,0 +1,101 @@
+.topmenu 
+{
+    /* direction: ltr; */
+}
+.mlddm 
+{
+    margin: 0;
+    padding: 0;
+    height: 62px;
+    display: inline-block;
+    width: 100%;
+    left: 0px;
+    position: relative;
+}
+.mlddm .hsub {
+    /*background: no-repeat right url(arrow.gif);*/
+}
+.mlddm .hsub:hover {
+    /*background: #C4C3C4 no-repeat right url(arrow.gif);*/
+}
+ .mlddm li
+{
+	display: inline;
+    list-style: none;
+    
+	margin: 0px;
+    padding: 0;
+    float: left;
+    
+}
+ .mlddm li a, .mlddm li a#buttonnohover 
+{
+    font-family: Arial, Helvetica, sans-serif;
+	
+    font-size: 13px;
+	
+    font-weight: bold;
+    line-height: 65px;
+	color: #006DB5;
+	text-decoration: none;
+	display: block;
+    height: 65px;
+    padding-right: 28.5px;
+    padding-left: 28.5px;
+    text-align: right;
+    direction: rtl;
+}
+.mlddm li ul a 
+{
+	line-height: 62px;
+}
+ .mlddm li a:hover, .mlddm li a#buttonhover
+{
+    color: #FFFFFF;
+	background-color: #006DB9;
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+ .mlddm ul
+{
+	z-index: 100;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    position: absolute;
+	background: #FFFFFF;
+	padding-bottom: 8px;
+	box-shadow: 3px 6px 6px -3px #000000;
+}
+.mlddm ul::before {
+	content: '';
+	background-color: #8F8F8F;
+	height: 5px;
+	display: block;
+}
+ .mlddm ul li
+{
+	float: none;
+}
+.mlddm ul li a
+{
+	width: auto;
+    
+	min-width: 144px;
+	margin: 0px;
+    
+	padding: 4px 15px 4px 15px;
+    font-weight: normal;
+    
+	line-height: 21px;
+	text-align: right;
+    
+	height: 21px;
+    text-decoration: none;
+    color: #707070;
+}
+.mlddm ul li a:hover
+{	
+    color: #FFFFFF;
+    background: #006CB9;
+}
