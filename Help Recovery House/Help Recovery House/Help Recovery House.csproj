@@ -58,9 +58,9 @@
     <Content Include="arabic\css\reset.css" />
     <Content Include="arabic\facts.html" />
     <Content Include="arabic\faqs.html" />
-    <Content Include="arabic\galleries.html" />
-    <Content Include="arabic\home.html" />
     <Content Include="arabic\housegallery.html" />
+    <Content Include="arabic\home.html" />
+    <Content Include="arabic\media.html" />
     <Content Include="arabic\index.html" />
     <Content Include="arabic\js\icheck.js" />
     <Content Include="arabic\js\jquery.js" />
@@ -77,8 +77,8 @@
     <Content Include="arabic\testimonials.html" />
     <Content Include="arabic\treatment.html" />
     <Content Include="arabic\vision_mission.html" />
-    <Content Include="arabic\why_help.html" />
-    <Content Include="arabic\why_us.html" />
+    <Content Include="arabic\why_help_recovery_house.html" />
+    <Content Include="arabic\why_recovery_house.html" />
     <Content Include="ask_answer.html" />
     <Content Include="css\homeslider.css" />
     <Content Include="css\main.bac.css" />
@@ -124,7 +124,7 @@
     <Content Include="slider1\engine1\wowslider.js" />
     <Content Include="slider1\engine1\wowslider.mod.js" />
     <Content Include="facts.html" />
-    <Content Include="galleries.html" />
+    <Content Include="housegallery.html" />
     <Content Include="images\banners\our_team.jpg" />
     <Content Include="images\our_team\001.png" />
     <Content Include="images\our_team\002.png" />
@@ -181,7 +181,7 @@
     <Content Include="square\blue.png" />
     <Content Include="faqs.html" />
     <Content Include="home.html" />
-    <Content Include="housegallery.html" />
+    <Content Include="media.html" />
     <Content Include="images\bannerline.png" />
     <Content Include="images\img1.png" />
     <Content Include="images\img2.png" />
@@ -223,8 +223,8 @@
     <Content Include="testimonials.html" />
     <Content Include="treatment.html" />
     <Content Include="recovery_process.html" />
-    <Content Include="why_help.html" />
-    <Content Include="why_us.html" />
+    <Content Include="why_help_recovery_house.html" />
+    <Content Include="why_recovery_house.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="mailSystem\PHPMailer_5.2.4\changelog.txt" />
