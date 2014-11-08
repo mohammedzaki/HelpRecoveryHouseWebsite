@@ -553,21 +553,25 @@ footer {
     .homeSlogin .btn_homeSlogin {
         position: relative;
         margin: auto;
-        width: 315px;
+        width: 277px;
+        height: 55px;
         top: -43px;
     }
     .homeSlogin .btn_homeSlogin .phone {
     /* margin-right: 10px; */
         
     font-family: Arial, Helvetica, sans-serif;  
-    /* font-size: 12pt; */          
+    font-size: 12pt;          
     color: #FFFFFF;
 }
 #btn_homeContactUs {
 }
 
 #btn_homeSurvey {
-    width: 113px;
+    width: 277px;
+    font-size: 12pt;
+    position: relative;
+    top: 9px;
 }
 
 #review_logo {
@@ -584,17 +588,18 @@ footer {
 }
 
     .contactUsPage > div {
-        height: 348px;
+        height: 352px;
     
-        width: 795px;
+        width: 805px;
         margin: auto;
 }
     .contactUsPage .rightCol {
-            float: right;
-        }
+            float: left;
+        
+}
         
         .contactUsPage .rightCol #map-canvas{
-            height: 304px;
+            height: 285px;
         }
 
         .contactUsPage .leftCol {
@@ -655,7 +660,7 @@ footer {
 }
 
 .address {
-    text-align: left;
+    text-align: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #58595b;

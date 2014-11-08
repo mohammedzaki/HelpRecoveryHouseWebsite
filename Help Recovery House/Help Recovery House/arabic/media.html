@@ -8,7 +8,10 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/menu/mlddmenu.css" type="text/css" />
     <script type="text/javascript" src="css/menu/mlddmenu.js"></script>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script src="js/jquery.js"></script>
 
+    <script src="js/jquery.slimscroll.js"></script>
 
     <title>Help Recovery House</title>
     <style>
@@ -16,7 +19,7 @@
 
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <div id="L_transparent">
         <div id="L_modebox">
             <div id="L_content">
@@ -33,7 +36,7 @@
                 <section class="upper_bar">
                     <div>
                         <a href="https://www.facebook.com/Helprecoveryhouse" id="btn_face" target="_blank"></a>
-                        <a href="#" id="btn_twitter"></a>
+                        <a href="#" id="btn_twitter"></a> 
                         <div class="wrapper-demo">
                             <div id="dd" class="wrapper-dropdown-5" tabindex="1">
                                 عربى
@@ -105,21 +108,18 @@
     <section class="pageContent" id="pageContent1" data-content-id="PageContent1">
         <section class="banner">
             <div>
-                <img src="../images/banners/faqs.jpg" />
+                <img src="../images/banners/housegallery.jpg" />
             </div>
             <div class="sep"></div>
-            <div class="pageTitle mainMargin">
-                <h3 class="verticalAlign mainMargin">اسئله متكرره وإجاباتها</h3>
+            <div class="pageTitle">
+                <h3 class="verticalAlign mainMargin">فيديو</h3>
             </div>
         </section>
-        <section class="subPageContent faqs_Page mainMargin">
+        <section class="subPageContent why_helpPage mainMargin">
             <div class="verticalAlign">
-                <div class="pragh">
-                    <h1 class="pragh_header">•	ماهى مرحله الديتوكس (ازالة السموم)؟</h1>
-                    <div class="pragh_content">
-                        الديتوكس هو عملية ازالة السموم , مما يسمح للجسم للتخلص من المخدرات وفي حينها يتم التعامل طبيا لتقليل أعراض الانسحاب. غالبا ما يكون الخطوة الأولى في برنامج العلاج من تعاطي المخدرات، وينبغي أن يتبعه العلاج السلوكي بالاضافه الى / او بدون الدواء، حسب احتياج كل مريض.
-                        ملرحلة الديتوكس او ازالة السموم وحدها دون العلاج السلوكي ودون متابعة لا يعتبرعلاج مطلقا و غير كافى للتعافى .
-
+                <div id="scrollbar_container">
+                    <div style="margin: auto; width: 560px;">
+                        <iframe width="560" height="315" src="//www.youtube.com/embed/fyj14J-g43o" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -189,9 +189,33 @@
     </footer>
     <div class="waterMarkLogo">
     </div>
-    <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
     <script>
+        $('#scrollbar_container').slimScroll({
+            height: '360px',
+            size: '10px',
+            position: 'right',
+            color: '#808083',
+            alwaysVisible: true,
+            //distance: '20px',
+            //start: $('#child_image_element'),
+            railVisible: true,
+            railColor: '#D5D5D5',
+            railOpacity: 0.4,
+            wheelStep: 10,
+            allowPageScroll: false,
+            disableFadeOut: false
+        });
+        document.onmousedown=disableclick;
+        function disableclick(event)
+        {
+            if(event.button==2)
+            {
+                return false;
+            }
+        }
         $(".overlay,.popup-close").click(function () {
             $(".popup-container").hide();
         });
