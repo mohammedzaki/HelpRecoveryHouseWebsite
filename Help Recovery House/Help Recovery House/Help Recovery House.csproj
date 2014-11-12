@@ -97,6 +97,8 @@
     <Content Include="images\home_gallery\img4.jpg" />
     <Content Include="images\home_gallery\img5.jpg" />
     <Content Include="images\home_gallery\img6.jpg" />
+    <Content Include="images\txt_homepage2Ar.png" />
+    <Content Include="images\txt_homepageAr.png" />
     <Content Include="slider1\data1\images\_mg_5938.jpg" />
     <Content Include="slider1\data1\images\_mg_5942.jpg" />
     <Content Include="slider1\data1\images\_mg_5962.jpg" />

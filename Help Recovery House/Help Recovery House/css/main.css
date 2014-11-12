@@ -328,7 +328,7 @@ footer {
     background: #FCFCFC;
     margin-top: -9px;
     z-index: 1;
-    min-height: 627px;
+    min-height: 600px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -551,8 +551,8 @@ footer {
     .homeSlogin .btn_homeSlogin {
         position: relative;
         margin: auto;
-        height: 56px;
-        width: 278px;
+        height: 32px;
+        width: 324px;
         top: -43px;
     }
     .homeSlogin .btn_homeSlogin .phone {
@@ -566,10 +566,9 @@ footer {
 }
 
 #btn_homeSurvey {
-    width: 277px;
+    width: 159px;
     position: relative;
     font-size: 12pt;
-    top: 9px;
 }
 
 #review_logo {
@@ -586,7 +585,7 @@ footer {
 }
 
     .contactUsPage > div {
-        height: 348px;
+        height: 334px;
     
         width: 795px;
         margin: auto;
@@ -596,7 +595,7 @@ footer {
         }
         
         .contactUsPage .rightCol #map-canvas{
-            height: 304px;
+            height: 261px;
         }
 
         .contactUsPage .leftCol {
@@ -641,7 +640,7 @@ footer {
 
             .contactUsPage .leftCol textarea.last {
                 width: 300px;
-                height: 145px;
+                height: 120px;
                 resize: none;
                 padding-top: 7px;
             }
@@ -858,10 +857,24 @@ footer {
     .why_helpPage > div {
         position: relative;
         left: 31px;
+        height: 367px;
         z-index: 5;
     
 }
-
+.why_helpPage .leftCol{
+       float: left;
+    
+}
+.why_helpPage .rightCol{
+    float: left;
+    width: 230px;
+    text-align: justify;
+    height: 100%;
+    margin-left:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #006CB6;
+    font-size: 14px;
+}
     .why_helpPage .pragh1 {
         margin-bottom: 15px;
         height: 44px;
@@ -887,7 +900,10 @@ footer {
         margin-bottom: 11px;
         width: 97%;
     }
-
+.why_helpPage .pragh a {
+    text-decoration: none;
+    color: #006CB6;
+}
         .why_helpPage .pragh .pragh_header {
             font-weight: bold;
         }

@@ -129,15 +129,14 @@
                     <img src="../images/logo2.png" />
                 </div>
                 <div class="txt_homepage">
-                    <img src="../images/txt_homepage.png" />
+                    <img src="../images/txt_homepageAr.png" />
                 </div>
                 <div class="btn_homeSlogin">
-                    <span class="phone btn_style">+201211197383</span>
-                    <span class="phone btn_style">+201211197384</span>
+                    <span class="phone btn_style">+201211197383 / 4</span>
                     <input id="btn_homeSurvey" type="button" class="btn_style" value="اختبار الإدمان" />
                 </div>
                 <div class="txt_homepage2">
-                    <img src="../images/txt_homepage2.png" />
+                    <img src="../images/txt_homepage2Ar.png" />
                 </div>
             </section>
         </section>
@@ -342,15 +341,15 @@
                         <table>
                             <tr>
                                 <td>الاسم :</td>
-                                <td><input type="text" id="txt_surveyname" placeholder="Type your Name" /> </td>
+                                <td><input type="text" id="txt_surveyname" placeholder="أكتب هنا ..." /> </td>
                             </tr>
                             <tr>
                                 <td>الموبايل *:</td>
-                                <td><input type="tel" class="IsNumberOnly" id="txt_surveyMobile" placeholder="Type your Mobile" /> </td>
+                                <td><input type="tel" class="IsNumberOnly" id="txt_surveyMobile" placeholder="أكتب هنا ..." /> </td>
                             </tr>
                             <tr>
                                 <td>الايميل *:</td>
-                                <td><input type="email" id="txt_surveyE_Mail" placeholder="Type your E-Mail" /> </td>
+                                <td><input type="email" id="txt_surveyE_Mail" placeholder="أكتب هنا ..." /> </td>
                             </tr>
                         </table>
                         <br />
@@ -432,7 +431,7 @@
             $("#txt_surveyname").val('');
             $("#txt_surveyMobile").val('');
             $("#txt_surveyE_Mail").val('');
-            $(".surveyresultDetails").html('<table> <tr> <td>الاسم :</td><td><input type="text" id="txt_surveyname" placeholder="Type your Name"/> </td></tr><tr> <td>الموبايل *:</td><td><input type="tel" class="IsNumberOnly" id="txt_surveyMobile" placeholder="Type your Mobile"/> </td></tr><tr> <td>الايميل *:</td><td><input type="email" id="txt_surveyE_Mail" placeholder="Type your E-Mail"/> </td></tr></table>');
+            $(".surveyresultDetails").html('<table> <tr> <td>الاسم :</td><td><input type="text" id="txt_surveyname" placeholder="أكتب هنا ..."/> </td></tr><tr> <td>الموبايل *:</td><td><input type="tel" class="IsNumberOnly" id="txt_surveyMobile" placeholder="أكتب هنا ..."/> </td></tr><tr> <td>الايميل *:</td><td><input type="email" id="txt_surveyE_Mail" placeholder="أكتب هنا ..."/> </td></tr></table>');
             $(".IsNumberOnly").keypress(function (evt) {
                 evt = (evt) ? evt : window.event;
                 var charCode = (evt.which) ? evt.which : evt.keyCode;
