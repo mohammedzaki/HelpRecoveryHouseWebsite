@@ -78,7 +78,7 @@ function resizeElement() {
     //alert(jQuery(".pageContent .banner").height());
     setTimeout(function () {
         $(".pageContent .subPageContent").css({ height: (jQuery(".pageContent").height() - jQuery(".pageContent .banner").height()) });
-    }, 100);
+    }, 250);
     
 }
 
