@@ -928,6 +928,7 @@ footer {
         margin: auto;
         text-align: justify;
         margin-bottom: 15px;
+        margin-right: 14px;
         /* margin-top: 15px; */
     }
 
@@ -1215,9 +1216,10 @@ footer {
     display: block;
     text-decoration: none;
     color: #333;
-    padding: 10px 0;
+    padding: 7px 0;
     transition: all 0.3s ease-out;
     border-bottom: 1px solid #e6e8ea;
+    width: 60px;
 }
 
 .wrapper-dropdown-5 .dropdown li:last-of-type a {
@@ -1232,8 +1234,9 @@ footer {
 
 /* Hover state */
 
-.wrapper-dropdown-5 .dropdown li:hover a {
-    color: #57a9d9;
+.wrapper-dropdown-5 .dropdown li:hover {
+    background-color: #57a9d9;
+    
 }
 
 /* Active state */

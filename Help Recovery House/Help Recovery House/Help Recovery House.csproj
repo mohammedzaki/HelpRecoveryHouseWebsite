@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="arabic\ask_answer.html" />
+    <Content Include="arabic\cannabis_addiction_treatmen.html" />
     <Content Include="arabic\contactus.html" />
     <Content Include="arabic\css\animate.css" />
     <Content Include="arabic\css\homeslider.css" />
@@ -58,6 +59,7 @@
     <Content Include="arabic\css\reset.css" />
     <Content Include="arabic\facts.html" />
     <Content Include="arabic\faqs.html" />
+    <Content Include="arabic\heroin_addiction_treatment.html" />
     <Content Include="arabic\housegallery.html" />
     <Content Include="arabic\home.html" />
     <Content Include="arabic\media.html" />
@@ -82,6 +84,8 @@
     <Content Include="ask_answer.html" />
     <Content Include="css\homeslider.css" />
     <Content Include="css\main.bac.css" />
+    <Content Include="cannabis_addiction_treatmen.html" />
+    <Content Include="heroin_addiction_treatment.html" />
     <Content Include="images\banners\ask_answer.jpg" />
     <Content Include="images\banners\contact_us.jpg" />
     <Content Include="images\banners\facts.jpg" />

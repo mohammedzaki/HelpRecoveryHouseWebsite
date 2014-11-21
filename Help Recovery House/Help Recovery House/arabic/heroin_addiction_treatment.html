@@ -6,9 +6,11 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="css/menu/mlddmenu.css" type="text/css" />
     <script type="text/javascript" src="css/menu/mlddmenu.js"></script>
 
+    <script src="js/jquery.slimscroll.js"></script>
 
     <title>Help Recovery House</title>
     <style>
@@ -20,7 +22,7 @@
     <div id="L_transparent">
         <div id="L_modebox">
             <div id="L_content">
-                <img src="../images/ajax-loader.gif" />
+                <img src="images/ajax-loader.gif" />
                 <p id="L_plz">
                     Please Wait...
                 </p>
@@ -96,55 +98,92 @@
                 </nav>
             </section>
             <section class="mainRightLogo">
-                <img src="../images/logo1.png" alt="Home" id="img1" onclick="window.location.href='index.html'" />
+                <img src="../images/logo1.png" alt="" id="img1" onclick="window.location.href='index.html'" />
                 <img src="../images/txt_logomainpage.png" alt="" id="img2" />
             </section>
         </div>
     </header>
     <div style="background: url(../images/line.png) center; height: 12px; width: 100%; z-index: 2; position: relative;"></div>
-    <section class="pageContent" id="pageContent1" data-content-id="PageContent1">
+    <section class="pageContent">
         <section class="banner">
             <div>
                 <img src="../images/banners/treatment.jpg" />
             </div>
             <div class="sep"></div>
             <div class="pageTitle">
-                <h3 class="verticalAlign mainMargin blueColor">علاج جميع انواع ادمان المخدرات</h3>
+                <h3 class="verticalAlign mainMargin blueColor">علاج إدمان الهيرويين</h3>
             </div>
         </section>
-        <section class="subPageContent why_helpPage mainMargin">
+        <section class="subPageContent faqs_Page mainMargin">
             <div class="verticalAlign">
-                <div class="pragh">
-                    <a href="heroin_addiction_treatment.html"><h1 class="pragh_header">علاج إدمان الهيرويين</h1></a>
-                    <div class="pragh_content">
+                <div id="scrollbar_container">
+                    <div class="pragh">
+                        <h1 class="pragh_header">ما هو الهيرويين؟</h1>
+                        <div class="pragh_content">
+                            إدمان الهيروين هو الادمان على المخدرات المسكنة المصنعة من المورفين (الأفيونات) ، وهي مادة تخلق بشكل طبيعي من نبات خشخاش الأفيون في آسيا. الهيروين النقي هو مسحوق أبيض ولكن عاده يخلط الهيروين بالشوائب التى تؤثر على لونه وتعطيه اللون البنى.
+                        </div>
                     </div>
-                </div>
-                <div class="pragh">
-                    <a href="#">
-                        <h1 class="pragh_header">علاج إدمان الكوكايين</h1>
-                    </a>
-                    <div class="pragh_content">
+                    <div class="pragh">
+                        <h1 class="pragh_header">كيف يتم تعاطى الهيرويين؟</h1>
+                        <div class="pragh_content">
+                            عادة يستخدم الهيرويين عن طريق الحقن ولكنه أيضا يمكن استشاقها
+                            ولكى تكتشف مدمن الهيرويين تجد فى المنزل أحزمه أو أربطه ملطخه بنقاط الدماء ، ملاعق أو أدوات مطبخ محروقه ، سرنجات.
+                            <br />
+                            كما تلاحظ أثار الحقن على جلد المدمن
+                        </div>
                     </div>
-                </div>
-                <div class="pragh">
-                    <a href="#">
-                        <h1 class="pragh_header">علاج إدمان الترامادول</h1>
-                    </a>
-                    <div class="pragh_content">
+                    <div class="pragh">
+                        <h1 class="pragh_header">كيف تعرف مدمن الهيرويين:</h1>
+                        <div class="pragh_content">
+                            1-	ضيق شديد في بؤبؤ العين.
+                            <br />
+                            2-	جروح وندبات في مكان الحقن.
+                            <br />
+                            3-	الخدر العام والذهول.
+                            <br />
+                            4-	البلادة واللامبالاة والكسل.
+                            <br />
+                            5-	الإهمال وعدم الاهتمام بالمظهر العام.
+                            <br />
+                            6-	العزله والإنطواء و الغياب عن الإجتماعات وامناسبات العائليه.
+                            <br />
+                            7-	التأخر فى الدراسه أو الإنقطاع عن العمل.
+                        </div>
                     </div>
-                </div>
-                <div class="pragh">
-                    <a href="cannabis_addiction_treatmen.html">
-                        <h1 class="pragh_header">علاج إدمان الحشيش والبانجو</h1>
-                    </a>
-                    <div class="pragh_content">
+                    <div class="pragh">
+                        <h1 class="pragh_header">ما هى أضرار تعاطى الهيرويين؟</h1>
+                        <div class="pragh_content">
+                            1-	هبوط في حركة الجهاز الهضمي والتنفسي.
+                            <br />
+                            2-	ضعف القدرة الجنسية لدى الرجال واضطراب الدوره الشهريه لدى النساء.
+                            <br />
+                            3-	الإمساك المزمن وعسر فى التبول.
+                            <br />
+                            4-	 احتمال الإصابة بمرض الإيدز (فقد المناعة المكتسبة) نتيجة استخدام الإبر الملوثه.
+                            <br />
+                            5-	هبوط الجهاز العصبي المركزي.
+                            <br />
+                            6-	الإصابة بالغرغرينة وبالتالي بتر أحد الأعضاء.
+                            <br />
+                            7-	حدوث التهاب وتليف الكبد.
+                            <br />
+                            8-	التعرض للسكتة الدماغية ثم الوفاة
+                        </div>
                     </div>
-                </div>
-                <div class="pragh">
-                    <a href="#">
-                        <h1 class="pragh_header">علاج إدمان الكحول</h1>
-                    </a>
-                    <div class="pragh_content">
+                    <div class="pragh">
+                        <h1 class="pragh_header">أعراض الإنسحاب فى مدمن الهيرويين:</h1>
+                        <div class="pragh_content">
+                            رعشه تصل إلى تشنجات، الإسهال، الذعر، سيلان الأنف ، قشعريرة وتعرق.
+                        </div>
+                    </div>
+                    <div class="pragh">
+                        <h1 class="pragh_header">علاج مدمن الهيرويين:</h1>
+                        <div class="pragh_content">
+                            علاج إدمان الهيرويين يشمل عده برامج علاجيه ، بما فى ذلك علاج طبى ودوائى يتم فى مرحله سحب المخدر من الجسم و علاج سلوكى يساعد على إعادة تأهيل المدمن لمعاودة استمرار حياته دون الإعتماد على أى مخدر.
+                            <br />
+                            وهدف العلاج استعادة قدر من الحياة الطبيعية إلى وظائف المخ والسلوك الإيجابى.
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,9 +253,24 @@
     </footer>
     <div class="waterMarkLogo">
     </div>
-    <script src="js/jquery.js"></script>
+
     <script src="js/main.js"></script>
     <script>
+        $('#scrollbar_container').slimScroll({
+            height: '350px',
+            size: '10px',
+            position: 'left',
+            color: '#808083',
+            alwaysVisible: true,
+            //distance: '20px',
+            //start: $('#child_image_element'),
+            railVisible: true,
+            railColor: '#D5D5D5',
+            railOpacity: 0.4,
+            wheelStep: 10,
+            allowPageScroll: false,
+            disableFadeOut: false
+        });
         $(".overlay,.popup-close").click(function () {
             $(".popup-container").hide();
         });
