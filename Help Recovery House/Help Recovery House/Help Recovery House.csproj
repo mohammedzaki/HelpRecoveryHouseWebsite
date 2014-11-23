@@ -101,6 +101,16 @@
     <Content Include="images\home_gallery\img4.jpg" />
     <Content Include="images\home_gallery\img5.jpg" />
     <Content Include="images\home_gallery\img6.jpg" />
+    <Content Include="images\treatment\img1.jpg" />
+    <Content Include="images\treatment\img10.jpg" />
+    <Content Include="images\treatment\img2.jpg" />
+    <Content Include="images\treatment\img3.jpg" />
+    <Content Include="images\treatment\img4.jpg" />
+    <Content Include="images\treatment\img5.jpg" />
+    <Content Include="images\treatment\img6.jpg" />
+    <Content Include="images\treatment\img7.jpg" />
+    <Content Include="images\treatment\img8.jpg" />
+    <Content Include="images\treatment\img9.jpg" />
     <Content Include="images\txt_homepage2Ar.png" />
     <Content Include="images\txt_homepageAr.png" />
     <Content Include="slider1\data1\images\_mg_5938.jpg" />
