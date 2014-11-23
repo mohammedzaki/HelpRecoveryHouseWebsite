@@ -76,10 +76,21 @@ function resizeElement() {
     alignBottomMenu();
     alignVision_missionUl();
     //alert(jQuery(".pageContent .banner").height());
+    /*
     setTimeout(function () {
         $(".pageContent .subPageContent").css({ height: (jQuery(".pageContent").height() - jQuery(".pageContent .banner").height()) });
     }, 250);
+    */
+    $(".pageContent .subPageContent").hide();
+    $(".pageContent .banner > div > img")[0].onload = function () { imgLoaded() };
+    //document.getElementsByTagName("body").onload = function () { imgLoaded() };
     
+}
+
+function imgLoaded() {
+    //alert("image loaded");
+    $(".pageContent .subPageContent").css({ height: (jQuery(".pageContent").height() - jQuery(".pageContent .banner").height()) });
+    $(".pageContent .subPageContent").show();
 }
 
 function alignBottomMenu() {
