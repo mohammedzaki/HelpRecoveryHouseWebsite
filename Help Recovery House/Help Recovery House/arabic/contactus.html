@@ -17,7 +17,7 @@
             <div id="L_content">
                 <img src="/images/ajax-loader.gif" />
                 <p id="L_plz">
-                    Please Wait...
+                    
                 </p>
             </div>
         </div>
@@ -52,7 +52,26 @@
                         <li>
                             <a href='#'>خدماتنا</a>
                             <ul>
-                                <li><a href='treatment.html'>علاج جميع انواع ادمان المخدرات</a> </li>
+                                <li>
+                                    <a href='#'>علاج جميع انواع ادمان المخدرات</a>
+                                    <ul>
+                                        <li>
+                                            <a href="heroin_addiction_treatment.html">علاج إدمان الهيرويين</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">علاج إدمان الكوكايين</a>
+                                        </li>
+                                        <li>
+                                            <a href="cannabis_addiction_treatmen.html">علاج إدمان الترامادول</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">علاج إدمان الحشيش والبانجو</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">علاج إدمان الكحول</a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li><a href='recovery_process.html'>مراحل العلاج المتبعه فى الدار</a> </li>
                                 <li><a href='survey.html'>اكتشف إذا كان فى بيتك مدمن</a> </li>
                             </ul>
@@ -161,9 +180,28 @@
                 <li>
                     <a href='#'>خدماتنا</a>
                     <ul>
-                        <li><a href='treatment.html'>علاج جميع انواع ادمان المخدرات</a> </li>
                         <li><a href='recovery_process.html'>مراحل العلاج المتبعه فى الدار</a> </li>
                         <li><a href='survey.html'>اكتشف إذا كان فى بيتك مدمن</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'>علاج جميع انواع ادمان المخدرات</a>
+                    <ul>
+                        <li>
+                            <a href="heroin_addiction_treatment.html">علاج إدمان الهيرويين</a>
+                        </li>
+                        <li>
+                            <a href="#">علاج إدمان الكوكايين</a>
+                        </li>
+                        <li>
+                            <a href="cannabis_addiction_treatmen.html">علاج إدمان الترامادول</a>
+                        </li>
+                        <li>
+                            <a href="#">علاج إدمان الحشيش والبانجو</a>
+                        </li>
+                        <li>
+                            <a href="#">علاج إدمان الكحول</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -201,7 +239,7 @@
         <div class="bottom">
             <div class="mainMargin">
                 <div class="left">
-                    <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a>
+                    <a href="#">Privacy Policy</a> | <a href="contactus.html">Contact Us</a> | <a href="#">Site Map</a>
                 </div>
                 <div class="right">
                     <span>Copyright Help Recovery House.2014. All rights reserved | By </span><a href="http://www.re-view.me" target="_blank"><img src="../images/review_logo.png" id="review_logo" /></a>
@@ -213,13 +251,33 @@
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVsSgedoIVclH-AaJzc5r8ZHEo18zkmus"></script>
     <script type="text/javascript">
+        var marker;
+        var map;
         function initialize() {
+            var myLatlng = new google.maps.LatLng(30.066341, 31.443749);
             var mapOptions = {
-                center: { lat: 30.066341, lng: 31.443749 },
-                zoom: 15
-            };
-            var map = new google.maps.Map(document.getElementById('map-canvas'),
+                zoom: 15,
+                center: myLatlng
+            }
+            map = new google.maps.Map(document.getElementById('map-canvas'),
                 mapOptions);
+
+            marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: "Help Recovery House."
+            });
+            google.maps.event.addListener(marker, 'click', toggleBounce);
+        }
+
+        function toggleBounce() {
+
+            if (marker.getAnimation() != null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
         }
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>

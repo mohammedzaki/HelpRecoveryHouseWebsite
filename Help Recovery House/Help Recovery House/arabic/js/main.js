@@ -51,6 +51,7 @@ $(function () {
     try {
         $(".pageContent .subPageContent").hide();
         $(".pageContent .banner > div > img")[0].onload = function () { imgLoaded() };
+        $("body")[0].onpageshow = function () { imgLoaded() };
     } catch (e) {
 
     }
@@ -92,8 +93,8 @@ function alignBottomMenu() {
     });
     ulWidth = $('.footermenu').width();
     netWidth = ulWidth - allWidth;
-    padding = netWidth / 6;
-    padding -= 5.8;
+    padding = netWidth / 7;
+    padding -= 5.5;
     $('.footermenu li:not(.footermenu li ul li,.footermenu li:last-child)').each(function () {
         $(this).css("padding", "0px " + padding + "px 0px 0px");
     });
@@ -111,7 +112,7 @@ function alignVision_missionUl() {
     ulWidth = $('.vision_missionPage .vision_missionUl').width();
     netWidth = ulWidth - allWidth;
     padding = netWidth / 2;
-    padding -= 5.8;
+    padding -= 5.5;
     $('.vision_missionPage .vision_missionUl li:not(.vision_missionPage .vision_missionUl li:last-child)').each(function () {
         $(this).css("padding", "0px " + padding + "px 0px 0px");
     });
