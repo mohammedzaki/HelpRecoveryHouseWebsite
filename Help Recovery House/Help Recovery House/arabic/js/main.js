@@ -24,6 +24,7 @@ function hideLoading() {
 
 
 $(function () {
+    $(".pageContent .subPageContent").hide();
     resizeElement();
     liIndex = 2;
     setInterval(function () {
@@ -49,9 +50,7 @@ $(function () {
         }
     });
     try {
-        $(".pageContent .subPageContent").hide();
         $(".pageContent .banner > div > img")[0].onload = function () { imgLoaded() };
-        $("body")[0].onpageshow = function () { imgLoaded() };
     } catch (e) {
 
     }
@@ -61,6 +60,12 @@ function resizeElement() {
     var valu = $("header").width();
     valu = ((((valu - $("header div").width()) / 2/* to get space reqiured to strech*/) / 7 /* 1% = 7px*/) /*+ 1.1*/) + 100;
     $("header div .mainLeftLogo .upper_bar").css("width", valu + "%");
+
+    if ($(".pageContent .banner > div > img")[0].complete == true) {
+        $(".pageContent .subPageContent").css({ height: (jQuery(".pageContent").height() - jQuery(".pageContent .banner").height()) });
+        $(".pageContent .subPageContent").show();
+    }
+
     $(".pageContent").css({ height: (jQuery(window).height() - 278) });
     $(".pageContentH").css({ height: (jQuery(window).height() - 278) });
     $(".homepage").css({ height: (jQuery(window).height() - 278) });
